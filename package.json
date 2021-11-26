@@ -7,7 +7,8 @@
     "node-red": "./node_modules/.bin/node-red -u ./.node-red -s ./.node-red/settings.js",
     "init": "npm i && npm run init:subdir-install && npm run init:vuedir-install",
     "init:subdir-install": "npm --prefix ./.node-red install ./.node-red",
-    "init:vuedir-install": "npm --prefix ./vue-node-red-view install ./vue-node-red-view"
+    "init:vuedir-install": "cd vue-node-red-view && npm i && cd ..",
+    "init:vuedir-install2": "npm --prefix ./vue-node-red-view install ./vue-node-red-view"
   },
   "keywords": [],
   "author": "",
